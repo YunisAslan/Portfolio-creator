@@ -3,7 +3,14 @@
 
 :root {
     --primary-black: #000;
+    --primary-orange: #FF8A56;
+    --primary-grey: #666;
+    --primary-white: #FFF;
 }
+
+
+
+
 
 
 
@@ -17,7 +24,10 @@ a {
     text-decoration: none;
 }
 
-
+/* 
+* {
+    outline: solid 1px red;
+} */
 
 /* NAVBAR SECTION */
 
@@ -56,3 +66,110 @@ a {
         font-size: 22px;
     }
 }
+
+
+/* INTRODUCTION SECTION */
+
+
+.introduction {
+    display: flex;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+    flex-wrap: wrap;
+}
+
+.intro-left-side {
+    display: flex;
+    flex-direction: column;
+    padding-top: 117px;
+    flex-basis: 50%;
+}
+
+.intro-left-side > h1 {
+    font-size: 72px;
+    font-weight: 700;
+    min-width: 620px;
+    padding-bottom: 34px;
+    letter-spacing: 1px;
+}
+
+.intro-left-side span {
+    color: var(--primary-orange);
+}
+
+.intro-left-side > p {
+    color: var(--primary-grey);
+    font-size: 22px;
+
+
+}
+
+.bookacall {
+    padding-top: 38px;
+}
+
+.bookacall button {
+    width: 151px;
+    height: 58px;
+    background-color: var(--primary-black);
+    color: var(--primary-white);
+    letter-spacing: 0.5px;
+}
+
+.bookacall a {
+    color: var(--primary-black);
+    padding-left: 40px;
+}
+.intro-right-side {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding-top: 70px;
+}
+
+@media(max-width:1365px) and (min-width:769px) {
+    .introduction {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .intro-left-side {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .intro-right-side {
+        justify-content: center;
+    }
+} 
+
+
+@media(max-width:768px) {
+    .introduction {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .intro-left-side {
+       text-align: center;
+       align-items: center;
+       /* min-width: 500px; */
+    }
+    
+    .intro-left-side > h1 {
+        min-width: 500px;
+    }
+
+    .intro-right-side {
+        justify-content: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+
+
