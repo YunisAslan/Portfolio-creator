@@ -246,6 +246,10 @@ a {
     flex-wrap: wrap;
 }
 
+.service {
+    padding: 10px;
+}
+
 .service h2 {
     font-size: 24px;
     font-weight: 700;
@@ -582,4 +586,140 @@ a {
         height: 1890px;
     }
 
+}
+
+
+/* PRODUCT DESIGNER SECTION */
+
+
+.product-head {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 112px;
+    padding-right: 112px;
+    flex-wrap: wrap;
+}
+
+
+.product-head-left > h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-piink);
+    padding-bottom: 22px;
+}
+
+.product-head-left > h3 {
+    font-size: 54px;
+    font-weight: 700;
+    padding-left: 0;
+}
+
+.product-head-right > p {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--primary-grey);
+    line-height: 40px;
+}
+
+.product-photos {
+    display: flex;
+    padding-top: 140px;
+    padding-left: 70px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+
+.product-right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-left-side img {
+    padding-right: 16px;
+}
+
+.product-right-side img {
+    padding-bottom: 16px;
+}
+
+
+/* RESPONSIVITY for PRODUCT DESIGNER SECTION */
+
+@media(max-width:1350px) and (min-width:1191px) {
+
+    .product-photos {
+        /* padding-left: 40px; */
+        padding: 0;
+        /* margin: 0; */
+        justify-content: center;
+        
+        
+    }
+
+    .product-right-side {
+        flex-direction: row;
+        padding-left: 0;
+        padding-right: 50px;
+    }
+
+}
+
+@media(max-width:1190px) and (min-width:1019px) {
+    .product-head {
+        text-align: center;
+        justify-content: space-evenly;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .product-head-right {
+      padding-right: 0;
+    }
+    
+    .product-right-side {
+        flex-direction: row;
+    }
+}
+
+@media(max-width:1018px) and (min-width:769px) {
+    
+    
+    .product-head {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .product-left-side {
+        flex-basis: 60%;
+        justify-content: center;
+    }
+
+    .product-photos {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+
+}
+
+@media(max-width:768px) {
+    .product-head {
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+/* MY IDEA :d */
+
+.projects-cards {
+    overflow-x: auto;
+}
+
+body {
+    overflow-x: hidden;
 }
