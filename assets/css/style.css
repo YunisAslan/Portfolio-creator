@@ -15,15 +15,11 @@
 }
 
 
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -451,6 +447,7 @@ h6 {
     flex-wrap: wrap;
 }
 
+
 .blogs-section {
     display: flex;
     justify-content: space-around;
@@ -847,6 +844,7 @@ h6 {
     padding-top: 191px;
     padding-right: 50px;
     flex-wrap: wrap;
+    padding-bottom: 150px;
 }
 
 .testimonials-left > h1 {
@@ -950,4 +948,118 @@ h6 {
         min-width: 500px;
     }
 
+}
+
+/* FAQ SECTION */
+.faq-section a {
+    text-decoration: none;
+    color: var(--primary-white);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.faq-section {
+    background-color: var(--primary-black);
+    height: 811px;
+    width: 100%;
+}
+
+.faq-left-right {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 130px;
+    flex-wrap: wrap;
+}
+
+.faq-section > h2 {
+    color: var(--primary-orange);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding-top: 72px;
+    padding-bottom: 20px;
+}
+
+.faq-section > h6 {
+    color: var(--primary-white);
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.faq-section > h2,
+.faq-section > h6 {
+    text-align: center
+}
+
+
+.faq-left-side {
+    flex-basis: 45%;
+    min-width: 570px;
+}
+
+.faq-left {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-grey);
+}
+
+.faq-left > img {
+    padding-bottom: 50px;
+}
+
+.faq-right-side {
+    flex-basis: 45%;
+    min-width: 570px;
+}
+
+
+.faq-right {
+    display: flex;
+    border-bottom: 1px solid var(--primary-grey);
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.faq-right > img {
+    padding-bottom: 50px;
+}
+
+
+/* RESPONSIVITY for FAQ SECTION */
+
+@media(max-width:1255px) and (min-width:769px) {
+    .faq-section {
+        height: 1600px;
+    }
+
+    .faq-left-side {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width:768px) {
+    .faq-section {
+        height: 1600px;
+    }
+
+    .faq-left-side {
+        padding-bottom: 100px;
+    }
+
+    .faq-left-right {
+        text-align: center;
+        padding-left: 130px;
+    }
+
+    .faq-left-side {
+        align-items: center;
+    }
+
+    .faq-left,
+    .faq-right {
+        max-width: 400px;
+    }
 }
